@@ -7,6 +7,7 @@ import org.junit.*
 class NinjaTests {
 
     void testSomething() {
+
         def instance = new Ninja(name: 'Naruto',
                                sensei: 'Kakashi')
 
