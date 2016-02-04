@@ -7,8 +7,11 @@ import org.junit.*
 class NinjaTests {
 
     void testSomething() {
-        def instance = new Ninja(name:'Naruto', sensei:'Kakashi')
-        instance.validate(['sensei'])
-        assert instance.hasErrors()
+
+        def instance = new Ninja()
+        instance.name = 'Naruto'
+        instance.sensei = 'Kakashi'
+
+        assert instance.validate(['sensei'])
     }
 }
